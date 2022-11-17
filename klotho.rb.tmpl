@@ -1,0 +1,42 @@
+class Klotho < Formula
+  desc ""
+  homepage "https://klo.dev"
+  license ""
+  version "{{VERSION}}"
+
+  depends_on "pulumi"
+
+  on_macos do
+    on_arm do
+      url "{{BINARY_BASE_URL}}/v{{VERSION}}/klotho_darwin_arm64"
+      sha256 "{{MACOS_ARM_SHA256}}"
+
+      def install
+        bin.install "klotho_darwin_arm64" => "klotho"
+      end
+    end
+    on_intel do
+      url "{{BINARY_BASE_URL}}/v{{VERSION}}/klotho_darwin_amd64"
+      sha256 "{{MACOS_INTEL_SHA256}}"
+
+      def install
+        bin.install "klotho_darwin_amd64" => "klotho"
+      end
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "{{BINARY_BASE_URL}}/v{{VERSION}}/klotho_linux_amd64"
+      sha256 "{{LINUX_INTEL_SHA256}}"
+
+      def install
+        bin.install "klotho_linux_amd64" => "klotho"
+      end
+    end
+  end
+
+  test do
+    system "klotho", "--version"
+  end
+end
