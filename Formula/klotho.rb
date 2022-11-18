@@ -2,22 +2,22 @@ class Klotho < Formula
   desc ""
   homepage "https://klo.dev"
   license ""
-  version "0.5.16"
+  version "0.5.17"
 
   depends_on "pulumi"
 
   on_macos do
     on_arm do
-      url "https://github.com/klothoplatform/klotho/releases/download/v0.5.16/klotho_darwin_arm64"
-      sha256 "fb16ae0fecf10f6a9ca276a6b7a0023a048f2da3d89944b0c11d8ef855c38c43"
+      url "https://github.com/klothoplatform/klotho/releases/download/v0.5.17/klotho_darwin_arm64"
+      sha256 "38b0c2ecf83968db8c93b7401abd1de20d7c1147703c99339136d18a452e8419"
 
       def install
         bin.install "klotho_darwin_arm64" => "klotho"
       end
     end
     on_intel do
-      url "https://github.com/klothoplatform/klotho/releases/download/v0.5.16/klotho_darwin_amd64"
-      sha256 "379fe4d0d3087caa70acc361803e1071293fb1194d252a3e3195b8faf239013d"
+      url "https://github.com/klothoplatform/klotho/releases/download/v0.5.17/klotho_darwin_amd64"
+      sha256 "1a0b1a72b3911871cda45557f8fb30f16af9dab267499e53f7629ab7d2bd1a36"
 
       def install
         bin.install "klotho_darwin_amd64" => "klotho"
@@ -27,8 +27,8 @@ class Klotho < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/klothoplatform/klotho/releases/download/v0.5.16/klotho_linux_amd64"
-      sha256 "c297bed83c3c8432ddbac5496a2aaa93e7dd9d82e3620575ef11d68f74b0e8c7"
+      url "https://github.com/klothoplatform/klotho/releases/download/v0.5.17/klotho_linux_amd64"
+      sha256 "f59cc7fae02310ce7b109fdefb0aa31b40b01fb98795d181419753789bad7379"
 
       def install
         bin.install "klotho_linux_amd64" => "klotho"
