@@ -1,5 +1,5 @@
 class
-  KlothoOSS < Formula
+  KlothoOss < Formula
   desc ""
   homepage "https://klo.dev"
   license ""
