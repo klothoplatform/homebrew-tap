@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -e -u
 
 BINARY_BASE_URL=$(echo ${BINARY_BASE_URL} | sed 's/\//\\\//g')
 VERSION=$(echo "${VERSION}" | cut -d "v" -f2)
