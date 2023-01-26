@@ -1,12 +1,12 @@
 #!/bin/bash
 
-set -e
+set -e -u
 
 BINARY_BASE_URL=$(echo ${BINARY_BASE_URL} | sed 's/\//\\\//g')
 VERSION=$(echo "${VERSION}" | cut -d "v" -f2)
 
 mkdir -p Formula
-cp klotho.rb.tmpl Formula/klotho.rb
+cp klotho.rb.tmpl "Formula/${OUTPUT_FILE_NAME}"
 
 sed -i "s/{{FORMULA_NAME}}/${FORMULA_NAME}/g" Formula/${OUTPUT_FILE_NAME}
 sed -i "s/{{BINARY_BASE_URL}}/${BINARY_BASE_URL}/g" Formula/${OUTPUT_FILE_NAME}
