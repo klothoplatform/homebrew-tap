@@ -7,7 +7,7 @@ VERSION=$(echo "${VERSION}" | cut -d "v" -f2)
 OUTPUT_PATH="Formula/${OUTPUT_FILE_NAME}"
 
 mkdir -p Formula
-cp klotho.rb.tmpl $OUTPUT_PATH
+cp "${OUTPUT_FILE_NAME}.tmpl" $OUTPUT_PATH
 
 sed -i "s/{{FORMULA_NAME}}/${FORMULA_NAME}/g" $OUTPUT_PATH
 sed -i "s/{{BINARY_BASE_URL}}/${BINARY_BASE_URL}/g" $OUTPUT_PATH
