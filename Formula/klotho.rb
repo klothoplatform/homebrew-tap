@@ -9,7 +9,7 @@ class KlothoDownloadStrategy < CurlDownloadStrategy
     # automatically rename the downloaded binary to klotho since the server doesn't provide a filename
     "klotho"
   end
-
+end
 class
   Klotho < Formula
   desc ""
