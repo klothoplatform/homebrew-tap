@@ -15,7 +15,7 @@ class
   desc ""
   homepage "https://klo.dev"
   license ""
-  version "0.6.1"
+  version "0.6.4"
 
   depends_on "pulumi"
 
@@ -25,19 +25,19 @@ class
 
   on_macos do
     on_arm do
-      url "http://srv.klo.dev/update/latest/darwin/arm64?stream=pro:v0.6.1", :using => KlothoDownloadStrategy
-      sha256 "78c3fcdc4137a27e3e6bdad4cb43a7f2a6c7a9513236a3108f28b43e7c195ac0"
+      url "http://srv.klo.dev/update/latest/darwin/arm64?stream=pro:v0.6.4", :using => KlothoDownloadStrategy
+      sha256 "50a3648477154fe7da38c1b5e8820514d4667f6b0050198ae652789b48df0ad6"
     end
     on_intel do
-      url "http://srv.klo.dev/update/latest/darwin/x86_64?stream=pro:v0.6.1", :using => KlothoDownloadStrategy
-      sha256 "a1cc8d562b136a0aadbc0f0e8f12d01a7e0fc6b8f30c3f3320355565c124524f"
+      url "http://srv.klo.dev/update/latest/darwin/x86_64?stream=pro:v0.6.4", :using => KlothoDownloadStrategy
+      sha256 "d35fa9f4dd81a584f9562d174677c8eaef1dcc0de2d5f45e311c95ede66338d7"
     end
   end
 
   on_linux do
     on_intel do
-      url "http://srv.klo.dev/update/latest/linux/x86_64?stream=pro:v0.6.1", :using => KlothoDownloadStrategy
-      sha256 "c1ab570e98d49c0be7b31f8c6f5ab629d923512e74e7ac668636de99ebab05c6"
+      url "http://srv.klo.dev/update/latest/linux/x86_64?stream=pro:v0.6.4", :using => KlothoDownloadStrategy
+      sha256 "fc85cad925d17be9868fe0b00c82112ca5904347eb3bf1d60cd915d98c62088f"
     end
   end
 
